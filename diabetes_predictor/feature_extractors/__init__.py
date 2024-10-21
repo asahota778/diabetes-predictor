@@ -1,8 +1,5 @@
 # diabetes_predictor/feature_extractors/__init__.py
-from abc import ABC, abstractmethod
-import pandas as pd
+from .feature_transformer_1 import AgeBinningFeatureExtractor
+from .feature_transformer_2 import BMIExtractor
 
-class FeatureExtractor(ABC):
-    @abstractmethod
-    def transform(self, data: pd.DataFrame):
-        pass
+__all__ = ['AgeBinningFeatureExtractor', 'BMIExtractor']
