@@ -1,8 +1,6 @@
-# diabetes_predictor/feature_extractors/__init__.py
-from abc import ABC, abstractmethod
-import pandas as pd
+# diabetes_predictor/__init__.py
+from .data_loader import DataLoader
+from .models.model import DiabetesModel
 
-class FeatureExtractor(ABC):
-    @abstractmethod
-    def transform(self, data: pd.DataFrame):
-        pass
+__all__ = ['DataLoader', 'DiabetesModel']
+
