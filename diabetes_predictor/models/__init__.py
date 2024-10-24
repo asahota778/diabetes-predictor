@@ -1,4 +1,4 @@
 # diabetes_predictor/models/__init__.py
-from .model import DiabetesModel
+from .model import Model
 
-__all__ = ['DiabetesModel']
+__all__ = ['Model']

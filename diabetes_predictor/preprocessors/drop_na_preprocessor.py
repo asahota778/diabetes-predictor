@@ -1,9 +1,12 @@
 # diabetes_predictor/preprocessors/drop_na_preprocessor.py
 import pandas as pd
 
-class DropNaPreprocessor:
-    def __init__(self, columns_to_check):
-        self.columns_to_check = columns_to_check
+class Preprocessor_drop:
+    def __init__(self):
 
-    def preprocess(self, data: pd.DataFrame):
-        return data.dropna(subset=self.columns_to_check)
+        self.columns_to_check = ['age', 'gender', 'ethnicity']
+
+    def remove_nan_rows(self, df):
+        # Drop rows with NaN values in the 'age', 'gender', and 'ethnicity' columns
+        df_cleaned = df.dropna(subset=self.columns_to_check)
+        return df_cleaned
