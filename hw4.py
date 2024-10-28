@@ -7,6 +7,7 @@
 #  "Hakuna matata", "Timon, Pumba and Simba are friends, but Simba could eat the other two."] 
 #
 
+
 # Define the function "count_simba" that accepts a list of strings
 def count_simba(list_of_strings):
     # Initialize a counter to keep track of the number of occurrences of "Simba"
@@ -83,6 +84,7 @@ df = get_day_month_year(dates)
 print(df)
 
 
+
 # 3) 
 # Create a function called "compute_distance" that takes
 # a list of tuple pairs with latitude and longitude coordinates and 
@@ -120,6 +122,7 @@ distances = compute_distance(coord_pairs)
 print(distances)
 
 
+
 #################################################
 # 4)
 # Consider a list that each element can be an integer or
@@ -154,3 +157,4 @@ def sum_general_int_list(nested_list):
 list_1 = [[2], 3, [[1, 2], 5]]
 result = sum_general_int_list(list_1)
 print(f"The sum of all integers in the list is: {result}")
+
