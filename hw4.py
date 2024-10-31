@@ -23,16 +23,16 @@ def count_simba(list_of_strings):
     return simba_count
 
 # Example usage:
-list_of_sentences = [
-    "Simba and Nala are lions.",
-    "I laugh in the face of danger.",
-    "Hakuna matata",
-    "Timon, Pumba and Simba are friends, but Simba could eat the other two."
-]
+#list_of_sentences = [
+#    "Simba and Nala are lions.",
+#    "I laugh in the face of danger.",
+#    "Hakuna matata",
+#    "Timon, Pumba and Simba are friends, but Simba could eat the other two."
+#]
 
 # Call the function with the example list and print the result
-result = count_simba(list_of_sentences)
-print(f"The name 'Simba' appears {result} times.")
+#result = count_simba(list_of_sentences)
+#print(f"The name 'Simba' appears {result} times.")
 
 
 
@@ -70,18 +70,18 @@ def get_day_month_year(date_list):
     return df
 
 # Example usage:
-import datetime
+#import datetime
 
 # Create a list of datetime.date objects
-dates = [
-    datetime.date(2023, 5, 17),
-    datetime.date(2022, 12, 25),
-    datetime.date(2021, 7, 4)
-]
+#dates = [
+#    datetime.date(2023, 5, 17),
+#    datetime.date(2022, 12, 25),
+#    datetime.date(2021, 7, 4)
+#]
 
 # Call the function with the example list and print the resulting DataFrame
-df = get_day_month_year(dates)
-print(df)
+#df = get_day_month_year(dates)
+#print(df)
 
 
 
@@ -115,11 +115,11 @@ def compute_distance(coord_pairs):
     return distances
 
 # Example usage:
-coord_pairs = [((41.23, 23.5), (41.5, 23.4)), ((52.38, 20.1), (52.3, 17.8))]
+#coord_pairs = [((41.23, 23.5), (41.5, 23.4)), ((52.38, 20.1), (52.3, 17.8))]
 
 # Call the function and print the result
-distances = compute_distance(coord_pairs)
-print(distances)
+#distances = compute_distance(coord_pairs)
+#print(distances)
 
 
 
@@ -154,7 +154,7 @@ def sum_general_int_list(nested_list):
     return total_sum
 
 # Example usage:
-list_1 = [[2], 3, [[1, 2], 5]]
-result = sum_general_int_list(list_1)
-print(f"The sum of all integers in the list is: {result}")
+#list_1 = [[2], 3, [[1, 2], 5]]
+#result = sum_general_int_list(list_1)
+#print(f"The sum of all integers in the list is: {result}")
 
