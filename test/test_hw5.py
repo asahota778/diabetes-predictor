@@ -1,10 +1,11 @@
 
 import sys
-from pathlib import Path
+import os
 
 # Add the project root directory 'diabetes-predictor' to sys.path for importing modules correctly
-project_root = Path(__file__).resolve().parent.parent  # Move up to `diabetes-predictor`
-sys.path.insert(0, str(project_root))
+current_dir = os.getcwd()
+parent_dir = os.path.abspath(os.path.join(current_dir,'..'))
+sys. path.append(parent_dir)
 
 import pytest
 from hw5 import Patient, Card, Deck, Triangle, Rectangle, Circle
